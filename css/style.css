@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Asap');
+
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes transition {
+	0% {color: #36b5ff;}
+	100% {color: #7217ea;}
+}
+
+@keyframes transition2 {
+	0% {color: white;}
+	100% {color: #7217ea;}
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Asap', sans-serif;
+}
+
+#header a{
+	color: #36b5ff;
+}
+
+#header a:hover {
+	animation-name: transition;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+	text-decoration: none;
+}
+
+#header img {
+	height: 100px;
+}
+
+#navigation li {
+	margin: 25px 25px;
+	font-size: 26px;
+}
+
+#slider {
+	background-image:url('../images/island.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+	height: 700px;
+}
+
+#slidercontent {
+	color: #fff;
+	margin-top: 15%;
+	padding: 13px;
+	border-radius: 10px;
+	background-color: rgba(114,23,234,0.4);
+	animation-name: fade;
+    animation-duration: 3s;
+}
+
+#slidercontent h1 {
+	font-size: 35px;
+	margin-bottom: 30px;
+}
+#slidercontent p {
+	font-size: 24px;
+	text-align: justify;
+	margin-bottom: 30px;
+}
+
+#slidercontent a {
+	padding: 10px;
+	border-radius: 10px;
+	border: 2px solid black;
+	background-color: #fff;
+	color: #7217ea;
+	font-size: 24px;
+}
+
+#slidercontent a:hover {
+	text-decoration: none;
+	color: white;
+	background-image: linear-gradient(90deg, rgba(114,23,234,1) 0%, rgba(54,181,255,1) 100%);
+}
+
+#offers {
+	padding: 25px 0px;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.offer {
+	height: 550px;
+}
+
+.offer .fa {
+	font-size: 54px;
+	margin: 25px 0px;
+}
+
+.offer p {
+	font-size: 22px;
+}
+
+.offer a {
+	font-size: 24px;
+	border: 2px solid black;
+	padding: 10px;
+	border-radius: 10px;
+	color: #7217ea;
+}
+
+.offer a:hover {
+	background-image: linear-gradient(90deg, rgba(114,23,234,1) 0%, rgba(54,181,255,1) 100%);
+	color: #fff;
+	text-decoration: none;
+}
+
+#newsletter {
+	font-size: 30px;
+	text-align: center;
+	padding: 15px 0px;
+}
+
+#newsletter h2 {
+	margin-bottom: 25px;
+}
+
+.news {
+	background-color: #fff;
+	border-radius: 15px;
+	padding: 10px;
+	color: #252525;
+}
+
+.news form #email {
+	border: 2px solid black;
+	border-radius: 5px;
+	margin: 15px 0px;
+}
+
+.news form #submit {
+	border: 2px solid black;
+	font-size: 24px;
+	padding: 10px;
+	border-radius: 10px;
+	color: #7217ea;
+	margin: 15px 0px;
+}
+
+.news form #submit:hover {
+	color: white;
+	background-image: linear-gradient(90deg, rgba(114,23,234,1) 0%, rgba(54,181,255,1) 100%);
+}
+
+#footer {
+	background-color: #36b5ff;
+	height: 100px;
+}
+
+#footer p {
+	color: white;
+	font-size: 24px;
+}
+
+#footer a {
+	font-size: 32px;
+	margin: 10px 5px;
+	color: white;
+}
+
+#footer a:hover {
+	text-decoration: none;
+	animation-name: transition2;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@media only screen and (max-width: 576px) {
+	#navigation li {font-size: 16px; margin: 25px 10px;}
+  }
